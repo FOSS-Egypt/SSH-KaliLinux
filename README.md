@@ -83,7 +83,8 @@ ____________
 
 ### If you get error (No Public Key) when update run this command:
 ```sh
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ED65462EC8D5E4C5
+gpg --keyserver keyserver.ubuntu.com --recv-keys 827C8569F2518CC677FECA1AED65462EC8D5E4C5
+gpg --export 827C8569F2518CC677FECA1AED65462EC8D5E4C5 | sudo tee /etc/apt/trusted.gpg.d/kali.gpg > /dev/null
 ```
 ____________
 
